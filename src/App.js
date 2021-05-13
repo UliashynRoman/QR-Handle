@@ -1,22 +1,21 @@
-import logo from './logo.svg';
+import lime_circle from './images/lime_circle.svg';
 import './App.css';
+
+import Reader from './components/qrReader';
+import Generator from './components/qrGenerator_v2';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={lime_circle} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+           Handle <code>qr-code</code>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <section className="qrSection">
+          <Generator/>
+          <Reader/>
+        </section>
       </header>
     </div>
   );

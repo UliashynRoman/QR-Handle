@@ -1,0 +1,46 @@
+.qrReader{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-gap: 1rem;
+}
+
+.qrBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    align-content: center;
+    justify-content: center;
+}
+
+.previewStyle, .previewStyle svg {
+    width: 12rem !important;
+}
+
+.qrOutput{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    grid-gap: 1rem;
+}
+.qrOutput p{
+    text-align: left;
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 425px) {
+    .qrReader{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        justify-items: center;
+    }
+    .qrBox{
+        width: 80%;
+        align-items: center;
+    }
+  }
